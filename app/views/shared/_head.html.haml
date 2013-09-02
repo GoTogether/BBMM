@@ -1,0 +1,40 @@
+.container
+  .row{style: "background: #1abc9c;"}
+    .btn-group{style: "padding-left: 0;"}
+      %a.btn.btn-primary.active{href: ""}
+        = "首页"
+      %a.btn.btn-primary{href: ""}
+        %i.fui-photo
+      %a.btn.btn-primary{href: ""}
+        %i.fui-heart
+      %a.btn.btn-primary{href: ""}
+        %i.fui-eye
+    .btn-group.pull-right{style: "padding-left: 0;"}
+      %a.btn.btn-primary{href: ""}
+        = "登陆"
+      %a.btn.btn-primary{href: ""}
+        = "注册"
+  .login-form.span4.pull-right{style: "display:inline-block;"}
+    .control-group
+      %input#login-name.login-field{type: "text", value: "", placeholder: "用户名"}
+      %label.login-field-icon.fui-user{for: "login-name"}
+      .control-group
+        %input#login-pass.login-field{type: "password", value: "", placeholder: "密码"}
+        %label.login-field-icon.fui-lock{for: "login-pass"}
+      %a.btn.btn-primary.btn-large.btn-block{href: "#"}
+        = "登陆"
+      %a.login-link{href: "#"}
+        = "忘记密码"
+
+-#.container
+-#  .login-form.span4
+-#    .control-group
+-#      %input#login-name.login-field{type: "text", value: "", placeholder: "用户名"}
+-#      %label.login-field-icon.fui-user{for: "login-name"}
+-#      .control-group
+-#        %input#login-pass.login-field{type: "password", value: "", placeholder: "密码"}
+-#        %label.login-field-icon.fui-lock{for: "login-pass"}
+-#      %a.btn.btn-primary.btn-large.btn-block{href: "#"}
+-#        = "登陆"
+-#      %a.login-link{href: "#"}
+-#        = "忘记密码"
