@@ -4,6 +4,7 @@ Bbmm::Application.routes.draw do
 
     collection do
       get :login
+      get :regist
     end
 
   end

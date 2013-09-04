@@ -92,8 +92,13 @@
 }
 .login-link {
     color: #bfc9ca;
-    display: block;
+    display: inline-block;
     font-size: 13px;
     margin-top: 15px;
     text-align: center;
+}
+
+.center {
+    text-align: center;
+    color: #798795;
 }

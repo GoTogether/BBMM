@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row" style="background: #1abc9c;">
+    <div class="btn-group" style="padding-left: 0;">
+      <%= link_to "首页", root_path, class: 'btn btn-primary active'%>
+      <%= link_to "我的订单", root_path, class: 'btn btn-primary'%>
+
+      <div class="btn-group">
+        <i class="dropdown-arrow dropdown-arrow-inverse"></i>
+        <button class="dropdown-toggle btn clearfix btn-primary" data-toggle="dropdown">
+          我的商场
+        <b class="caret"></b>
+        </button>
+        <ul class="dropdown-menu dropdown-inverse">
+          <li>
+            <a tabindex="-1" href="#">收藏夹</a>
+          </li>
+          <li>
+            <a tabindex="-1" href="#">优惠券</a>
+          </li>
+          <li>
+            <a tabindex="-1" href="#">积分</a>
+          </li>
+          <li>
+            <a tabindex="-1" href="#">消息</a>
+          </li>
+        </ul>
+      </div>
+
+      <%= link_to "在线客服", root_path, class: 'btn btn-primary'%>
+
+      <div class="btn-group">
+        <i class="dropdown-arrow dropdown-arrow-inverse"></i>
+        <button class="dropdown-toggle btn clearfix btn-primary" data-toggle="dropdown">
+          服务中心
+          <b class="caret"></b>
+        </button>
+        <ul class="dropdown-menu dropdown-inverse" role="menu" aria-labelledby="drop4">
+          <li>
+            <a tabindex="-1" href="#">退换货</a>
+          </li>
+          <li>
+            <a tabindex="-1" href="#">投诉</a>
+          </li>
+          <li>
+            <a tabindex="-1" href="#">安装维修</a>
+          </li>
+          <li>
+            <a tabindex="-1" href="#">帮助中心</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="btn-group pull-right" style="padding-left: 0;">
+      <%= link_to "登陆", login_welcome_index_path, class: 'btn btn-primary'%>
+      <%= link_to "注册", regist_welcome_index_path, class: 'btn btn-primary'%>
+    </div>
+  </div>
+</div>

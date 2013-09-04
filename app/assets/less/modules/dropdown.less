@@ -5,15 +5,17 @@
 .dropdown-menu {
   background-color: @dropdown-background;
   border: none;
+  border-radius: 0;
   display: block;
   margin-top: 8px;
   opacity: 0;
   padding: 0;
   visibility: hidden;
   width: 100%;
+  min-width: 0;
   .box-shadow(none);
   .transition(.25s);
-  
+
   &.typeahead {
     display: none;
     opacity: 1;
@@ -24,7 +26,7 @@
 
   // Opened state
   .open > & {
-    margin-top: 18px;
+//    margin-top: 18px;
     opacity: 1;
     visibility: visible;
   }
@@ -78,7 +80,7 @@
       &.highlighted {
         background: mix(@inverse, @base, 73.5%);
         color: @inverse;
-        
+
         &:hover,
         &:focus {
           background: mix(@inverse, @base, 66%);
@@ -138,7 +140,7 @@
     }
   }
   > .dropdown-arrow {
-    margin-top: 9px;
+//    margin-top: 9px;
     opacity: 1;
   }
 }
@@ -156,7 +158,7 @@
   right: 13px;
   top: 100%;
   width: 0;
-  z-index: 10;  
+  z-index: 10;
   -webkit-transform: rotate(360deg); // Make corners smooth
   .transition(.25s);
 }
@@ -207,7 +209,7 @@
       &:hover,
       &:active,
       &:focus {
-        background: mix(@base, black, 85%);
+        background: mix(@firm, black, 85%);
       }
       &.highlighted {
         background: mix(@base, @inverse, 85%);
