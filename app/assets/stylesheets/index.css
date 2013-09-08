@@ -3,6 +3,16 @@ div.search{
     margin-bottom: 0;
 }
 
+div.search .input-search {
+    position: relative;
+    left: 260px;
+}
+
+div.search .input-search input{
+    width: 320px;
+}
+
+
 div.search img{
     width: 80px;
     height: 80px;
@@ -22,7 +32,7 @@ div.search div *{
 
 div.search .cart a {
     height: 19px;
-    margin-left: 28px;
+    margin-left: 320px;
     font-weight: lighter;
     /*background: url(/assets/icon_from_suning.png) no-repeat 0 -135px;*/
 }
@@ -38,8 +48,9 @@ div.search .cart a span.icon{
 .cart .cart-list {
     background-color: #ffffff;
     border: 1px solid #7f8c9a;
-    height: 130px;
+    height: auto;
     display: none;
+    width: auto;
 }
 .cart:hover .cart-list {
     display: block;
