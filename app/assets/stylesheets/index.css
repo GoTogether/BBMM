@@ -51,10 +51,24 @@ div.search .cart a span.icon{
     height: auto;
     display: none;
     width: auto;
+    padding-top: 0;
 }
 .cart:hover .cart-list {
     display: block;
 }
 .cart-list li {
+    height: 60px !important;
     list-style: none;
+    margin: 8px 8px 0 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #415b76;
+}
+
+.cart-list li:last-child {
+    border: none;
+}
+
+.cart-list li img {
+    width: 60px;
+    height: 60px;
 }

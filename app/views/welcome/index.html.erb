@@ -1,12 +1,11 @@
 
 <div class="container">
     <div class="row">
-
         <div class="search">
-
           <img src="/assets/icons/Infinity-Loop@2x.png">
 
           <div class="pull-right cart">
+
             <a href="#fakelink" class="btn btn-warning">
               <span class="fui-list icon"></span>
               购物车
@@ -15,10 +14,9 @@
             </a>
 
             <div class="cart-list">
-              <li><a href="#fakelink">Element One</a></li>
-              <li><a href="#fakelink">Element Three</a></li>
-              <li><a href="#fakelink">Element Three</a></li>
-              <li><a href="#fakelink">Element Three</a></li>
+              <% 10.times do |i| %>
+                <%= render "cart_item" %>
+              <% end %>
             </div>
 
           </div>
@@ -33,14 +31,9 @@
         </div>
 
         <hr style="width: 100%; height: 1px;background-color: #8E44AD;padding: 0;margin: 0;" />
-
-
-
-
-
     </div>
 
-  <h1>Basic elements</h1>
+  <h1>Basic elementsBasic elementsBasic elementsBasic elementsBasic elementsBasic elementsBasic elementsBasic elements</h1>
   <h3 class="demo-panel-title">Buttons</h3>
 
   <div class="row demo-row">
