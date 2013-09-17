@@ -13,9 +13,16 @@
             </a>
 
             <div class="cart-list">
-              <% 10.times do |i| %>
+              <% 4.times do |i| %>
                 <%= render "cart_item" %>
               <% end %>
+
+              <div class="cart-list-summary">
+                共
+                <span>5</span>
+                件商品　　共计：<span>¥364.90</span>
+                <a href="#fakelink" class="btn btn-warning">去结算</a>
+              </div>
             </div>
 
           </div>

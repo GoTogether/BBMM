@@ -56,7 +56,9 @@ div.search .cart a span.icon{
     background-color: #fff;
     border: 1px solid #7f8c9a;
     height: auto;
-    /*display: none;*/
+    max-height: 480px;
+    overflow: scroll;
+    display: none;
     width: 460px;
     padding-top: 0;
     position: relative;
@@ -65,24 +67,63 @@ div.search .cart a span.icon{
 .cart:hover .cart-list {
     display: block;
 }
-.cart-list li {
+.cart-list div {
     height: 60px !important;
     list-style: none;
     margin: 8px 8px 0 8px;
+    padding-top: 0px !important;
     padding-bottom: 8px;
     border-bottom: 1px solid #415b76;
 }
 
-.cart-list li:last-child {
+.cart-list div:last-child {
     border: none;
 }
 
-.cart-list li img {
+.cart-list div img {
     width: 60px;
     height: 60px;
+    float: left;
 }
 
-.cart-list li a {
+.cart-list div a {
+    height: 46px !important;
     margin-left: 0px !important;
     text-decoration: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 6px 0;
+}
+
+.cart-list div .price {
+    position: relative;
+    top: 8px;
+    left: 16px;
+    color: red;
+}
+
+.cart-list div .num {
+    position: relative;
+    top: 8px;
+    left: 16px;
+    color: #798795;
+    font-size: 0.5em;
+}
+
+.cart-list div .del {
+    display: block;
+    position: relative;
+    left: 16px;
+    top: 8px;
+    width: 2em;
+}
+
+.cart-list .cart-list-summary{
+    text-align: center;
+    height: 28px !important;
+}
+
+.cart-list .cart-list-summary a {
+    height: 19px !important;
+    padding: 4px 8px;
 }
